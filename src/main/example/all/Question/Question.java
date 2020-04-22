@@ -15,7 +15,6 @@ public class Question {
         this.correctAnswer =correctAnswer;
         this.listAnswer =listAnswer;
 
-        String s ="hello";
     }
 
     public String getQuestion() {

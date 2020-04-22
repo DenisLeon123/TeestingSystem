@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="PersonDao" class="all.personDao.PersonDao">
+    </bean>
+
+    <bean id="PersonService" class="all.personService.PersonService">
+        <constructor-arg name="dao" ref="PersonDao"/>
+    </bean>
+
+    <bean id="FactoryTester" class="all.tester.FactoryTester">
+    </bean>
+
+    <bean id="FactoryTesterService" class="all.factoryTesterService.FactoryTesterService">
+        <constructor-arg name="factoryTester" ref="FactoryTester"/>
+    </bean>
+
+    <bean id="TestingSystem" class="all.testingSystem.TestingSystem">
+    </bean>
+
+    <bean id="TestingSystemService" class="all.testingSystemService.TestingSystemService">
+        <constructor-arg name="testingSystem" ref="TestingSystem"/>
+    </bean>
+    <!--  //  -->
+
+</beans>

@@ -14,6 +14,8 @@ public class Question {
         this.question =question;
         this.correctAnswer =correctAnswer;
         this.listAnswer =listAnswer;
+
+        String s ="hello";
     }
 
     public String getQuestion() {

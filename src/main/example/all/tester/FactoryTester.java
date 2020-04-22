@@ -8,6 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+//что то добавил
+
 public class FactoryTester {
     private static String patchTest;
     private static ListQuestion listQuestion;
